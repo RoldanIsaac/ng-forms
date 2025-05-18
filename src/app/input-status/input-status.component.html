@@ -1,7 +1,7 @@
 <!-- Input status for SHO Management System -->
 
-<div class="temporal-input-container">
-  <form [formGroup]="formGroup">
+<form [formGroup]="formGroup">
+  <div class="temporal-input-container">
     <!-- Default Data -->
     <lf-input>
       <label slot="label">Default Data</label>
@@ -24,5 +24,5 @@
       <label slot="label">Lock / No Edit</label>
       <input slot="input" leaf-input formControlName="lock" />
     </lf-input>
-  </form>
-</div>
+  </div>
+</form>
