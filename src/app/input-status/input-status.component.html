@@ -1,32 +1,34 @@
 <!-- Input status for SHO Management System -->
+
 <div class="temporal-input-container">
-  <!-- 1. Placeholder -->
-  <lf-input>
-    <label slot="label">Place Holder</label>
-    <input slot="input" leaf-input placeholder="placeholder" />
-  </lf-input>
+  <form [formGroup]="formGroup">
+    <!-- Default Data -->
+    <lf-input>
+      <label slot="label">Default Data</label>
+      <input
+        slot="input"
+        leaf-input
+        placeholder="placeholder"
+        formControlName="default"
+      />
+    </lf-input>
 
-  <!-- 2. Default Data -->
-  <lf-input>
-    <label slot="label">Default Data</label>
-    <input slot="input" leaf-input value="Novelties" />
-  </lf-input>
+    <!-- Focus Edit -->
+    <lf-input>
+      <label slot="label">Focus Edit</label>
+      <input slot="input" leaf-input formControlName="focus" />
+    </lf-input>
 
-  <!-- 3. Focus Edit -->
-  <lf-input>
-    <label slot="label">Focus Edit</label>
-    <input slot="input" leaf-input value="FOOD" />
-  </lf-input>
+    <!-- Field Error -->
+    <lf-input>
+      <label slot="label">Field Error</label>
+      <input slot="input" leaf-input formControlName="error" />
+    </lf-input>
 
-  <!-- 4. Field Error -->
-  <lf-input>
-    <label slot="label">Field Error</label>
-    <input slot="input" leaf-input value="FOOD" />
-  </lf-input>
-
-  <!-- 5. Lock / No Edit  -->
-  <lf-input>
-    <label slot="label">Lock / No Edit</label>
-    <input slot="input" leaf-input value="FOOD" />
-  </lf-input>
+    <!-- Lock / No Edit  -->
+    <lf-input>
+      <label slot="label">Lock / No Edit</label>
+      <input slot="input" leaf-input formControlName="lock" />
+    </lf-input>
+  </form>
 </div>

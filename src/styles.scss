@@ -20,21 +20,50 @@
   flex-direction: column;
 }
 
+.leaf-input__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--gray-900, #111928);
+}
+
 .leaf-input {
-  width: 100%;
   height: 36px;
   border-radius: 8px;
   border: 1px solid var(--gray-300, #d1d5db);
-
   font-weight: 400;
   font-size: 14px;
   line-height: 125%;
   letter-spacing: 0%;
   vertical-align: middle;
-  padding: 0 4px;
+  padding: 0 16px;
 }
 
-.leaf-input-placeholder {
-  color: var(--gray-50, #f9fafb);
-  background: var(--gray-300, #d1d5db);
+// Remove default focus outline
+.leaf-input:focus {
+  outline: none;
+}
+
+// Input status variations
+.leaf-input-default {
+  background-color: var(--gray-50, #f9fafb);
+  color: var(--gray-500, #6b7280);
+  &::placeholder {
+    color: var(--gray-300, #d1d5db);
+  }
+}
+.leaf-input-focus {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid var(--primary-500, #3f83f8);
+  box-shadow: 0px 4px 4px 0px #1c64f21a;
+}
+.leaf-input-error {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid var(--red-500, #f05252);
+  box-shadow: 0px 4px 4px 0px #1c64f21a;
+}
+.leaf-input-lock {
+  color: var(--gray-500, #6b7280);
+  background-color: var(--gray-200, #e5e7eb);
 }
