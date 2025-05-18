@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+.temporal-input-container {
+  margin: auto;
+  margin-top: 100px;
+  width: 360px;
+  box-shadow: 0 1px 2px -1px #605f5f65;
+  box-shadow: 0 1px 3px 1px #605f5f65;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaf-input-container {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leaf-input {
+  width: 100%;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #d1d5db);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding: 0 4px;
+}
+
+.leaf-input-placeholder {
+  color: var(--gray-50, #f9fafb);
+  background: var(--gray-300, #d1d5db);
+}
