@@ -29,7 +29,7 @@ export class InputStatusComponent {
     this.formGroup = this._fb.nonNullable.group({
       default: [''],
       focus: ['Novelties'],
-      error: ['Equipments', [Validators.required, Validators.maxLength(3)]],
+      error: ['Equipments', [Validators.required, Validators.maxLength(8)]],
       lock: ['Food'],
     });
   }
