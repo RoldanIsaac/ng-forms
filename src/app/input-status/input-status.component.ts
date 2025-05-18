@@ -28,8 +28,10 @@ export class InputStatusComponent {
   private _buildForm(): void {
     this.formGroup = this._fb.nonNullable.group({
       default: [''],
-      focus: ['Novelties'],
-      error: ['Equipments', [Validators.required, Validators.maxLength(8)]],
+      focus_error: [
+        'Novelties',
+        [Validators.required, Validators.maxLength(8)],
+      ],
       lock: ['Food'],
     });
   }
