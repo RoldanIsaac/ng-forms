@@ -3,7 +3,7 @@
 <form [formGroup]="formGroup">
   <div class="temporal-input-container">
     <!-- Default Data -->
-    <lf-input>
+    <leaf-input>
       <label slot="label">Default Data</label>
       <input
         slot="input"
@@ -11,18 +11,18 @@
         placeholder="placeholder"
         formControlName="default"
       />
-    </lf-input>
+    </leaf-input>
 
     <!-- Focus Edit | Field Error -->
-    <lf-input>
+    <leaf-input>
       <label slot="label">Focus Edit | Field Error (max. 8)</label>
       <input slot="input" leaf-input formControlName="focus_error" />
-    </lf-input>
+    </leaf-input>
 
     <!-- Lock / No Edit  -->
-    <lf-input>
+    <leaf-input>
       <label slot="label">Lock / No Edit</label>
       <input slot="input" leaf-input formControlName="lock" />
-    </lf-input>
+    </leaf-input>
   </div>
 </form>

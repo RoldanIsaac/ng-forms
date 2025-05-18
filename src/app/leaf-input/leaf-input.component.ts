@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lf-input',
+  selector: 'leaf-input',
   imports: [],
   templateUrl: './leaf-input.component.html',
   styleUrl: './leaf-input.component.scss',
