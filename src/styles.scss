@@ -1,8 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use "app/@leaf/inputs/leaf-input";
 
 @font-face {
   font-family: "Inter";
   src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+  --gray-50: #f9fafb;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --primary-500: #3f83f8;
+  --red-500: #f05252;
 }
 
 body {

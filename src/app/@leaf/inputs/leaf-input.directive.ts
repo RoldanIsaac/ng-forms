@@ -3,7 +3,7 @@ import { NgControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
 @Directive({
-  selector: '[leaf-input]',
+  selector: '[leafInput]',
 })
 export class LeafInputDirective {
   private valueChanges$!: Subscription;

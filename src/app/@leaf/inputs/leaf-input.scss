@@ -1,27 +1,28 @@
 // Remove default focus outline
+
 .leaf-input:focus {
   outline: none;
 }
 
 // Input status variations
 .leaf-input-default {
-  background-color: var(--gray-50, #f9fafb);
-  color: var(--gray-500, #6b7280);
+  background-color: var(--gray-50);
+  color: var(--gray-500);
   &::placeholder {
-    color: var(--gray-300, #d1d5db);
+    color: var(--gray-300);
   }
 }
 .leaf-input-focus {
   background-color: hsl(0, 0%, 100%);
-  border: 1px solid var(--primary-500, #3f83f8);
+  border: 1px solid var(--primary-500) !important;
   box-shadow: 0px 4px 4px 0px #1c64f21a;
 }
 .leaf-input-error {
   background-color: hsl(0, 0%, 100%);
-  border: 1px solid var(--red-500, #f05252);
+  border: 1px solid var(--red-500) !important;
   box-shadow: 0px 4px 4px 0px #1c64f21a;
 }
 .leaf-input-lock {
   color: var(--gray-500, #6b7280);
-  background-color: var(--gray-200, #e5e7eb);
+  background-color: var(--gray-200) !important;
 }
