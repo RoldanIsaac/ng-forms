@@ -1,5 +1,9 @@
-// Remove default focus outline
+// Always remember to import your colors or use the root colors
+// @use '../../../../styles/colors.scss';
+// @use '../../../../styles/borders';
+// @use '../../../../styles/fonts';
 
+// Remove default focus outline
 .leaf-input:focus {
   outline: none;
 }
@@ -23,6 +27,6 @@
   box-shadow: 0px 4px 4px 0px #1c64f21a;
 }
 .leaf-input-lock {
-  color: var(--gray-500, #6b7280);
+  color: var(--gray-500);
   background-color: var(--gray-200) !important;
 }
