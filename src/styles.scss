@@ -53,31 +53,3 @@ body {
   vertical-align: middle;
   padding: 0 16px;
 }
-
-// Remove default focus outline
-.leaf-input:focus {
-  outline: none;
-}
-
-// Input status variations
-.leaf-input-default {
-  background-color: var(--gray-50, #f9fafb);
-  color: var(--gray-500, #6b7280);
-  &::placeholder {
-    color: var(--gray-300, #d1d5db);
-  }
-}
-.leaf-input-focus {
-  background-color: hsl(0, 0%, 100%);
-  border: 1px solid var(--primary-500, #3f83f8);
-  box-shadow: 0px 4px 4px 0px #1c64f21a;
-}
-.leaf-input-error {
-  background-color: hsl(0, 0%, 100%);
-  border: 1px solid var(--red-500, #f05252);
-  box-shadow: 0px 4px 4px 0px #1c64f21a;
-}
-.leaf-input-lock {
-  color: var(--gray-500, #6b7280);
-  background-color: var(--gray-200, #e5e7eb);
-}
