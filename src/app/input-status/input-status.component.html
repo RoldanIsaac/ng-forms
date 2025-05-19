@@ -1,6 +1,30 @@
 <!-- Input status for SHO Management System -->
 
+<h1>Default Inputs</h1>
+<div class="temporal-input-container">
+  <!-- Default Data -->
+  <leaf-input>
+    <label slot="label">Default Data</label>
+    <input slot="input" leafInput placeholder="placeholder" />
+  </leaf-input>
+
+  <!-- Focus Edit | Field Error -->
+  <leaf-input>
+    <label slot="label"
+      >Focus Edit | Field Error (max. 8) Unavailable without form control</label
+    >
+    <input slot="input" leafInput maxlength="8" />
+  </leaf-input>
+
+  <!-- Lock / No Edit  -->
+  <leaf-input>
+    <label slot="label">Lock / No Edit</label>
+    <input slot="input" leafInput disabled />
+  </leaf-input>
+</div>
+
 <form [formGroup]="formGroup">
+  <h1>Form Control Inputs</h1>
   <div class="temporal-input-container">
     <!-- Default Data -->
     <leaf-input>

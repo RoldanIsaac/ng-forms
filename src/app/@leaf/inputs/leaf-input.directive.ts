@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener, Optional } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
@@ -9,7 +9,10 @@ import { Subscription } from 'rxjs';
 export class LeafInputDirective {
   private valueChanges$!: Subscription;
 
-  constructor(private _el: ElementRef, private controlDir: NgControl) {}
+  constructor(
+    private _el: ElementRef,
+    @Optional() private controlDir: NgControl
+  ) {}
 
   ngOnInit(): void {
     // console.log(this._el.nativeElement);
@@ -17,7 +20,9 @@ export class LeafInputDirective {
 
     this.setStyles();
 
-    const control = this.controlDir.control;
+    const control = this.controlDir?.control;
+
+    // Error styles on invalid status
     if (control) {
       this.valueChanges$ = control.valueChanges?.subscribe((value) => {
         if (control.valid) {
@@ -27,8 +32,12 @@ export class LeafInputDirective {
         }
       });
     }
-    if (control?.disabled) {
+
+    // Lock styles on disabled status
+    if (control?.disabled || this._el.nativeElement.disabled) {
       this._el.nativeElement?.classList.add('leaf-input-lock');
+    } else {
+      this._el.nativeElement?.classList.remove('leaf-input-lock');
     }
   }
 
