@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 
 @Directive({
   selector: '[leafInput]',
+  standalone: true,
 })
 export class LeafInputDirective {
   private valueChanges$!: Subscription;
