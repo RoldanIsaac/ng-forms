@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  * {
+    font-family: "Inter";
+  }
+}
+
 .temporal-input-container {
   margin: auto;
   margin-top: 100px;
@@ -8,7 +19,7 @@
   box-shadow: 0 1px 3px 1px #605f5f65;
   padding: 20px;
   border-radius: 8px;
-  gap: 8px;
+  gap: 24px;
   display: flex;
   flex-direction: column;
 }
